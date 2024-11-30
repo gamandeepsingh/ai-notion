@@ -78,7 +78,7 @@ const Sidebar = () => {
   const menuOptions = (
     <>
       <NewDocumentButton />
-      <div className="flex p-4 flex-col space-y-4 md:max-w-36">
+      <div className="flex py-4 flex-col items-start space-y-4 min-w-44 max-w-52">
         {groupedData.owner.length === 0 ? (
           <h2 className="text-gray-500 font-semibold text-sm">
             No Documnent Found
@@ -89,7 +89,7 @@ const Sidebar = () => {
               My Documents
             </h2>
             {groupedData.owner.map((doc) => (
-              <SidebarOptions key={doc.id} id={doc.id} href={`/docs/${doc.id}`}/>
+              <SidebarOptions key={doc.id} id={doc.id} href={`/doc/${doc.id}`}/>
             ))}
           </>
         )}
@@ -119,7 +119,7 @@ const Sidebar = () => {
           <SheetContent side={"left"} className="">
             <SheetHeader>
               <SheetTitle>Menu</SheetTitle>
-              <div>{menuOptions}</div>
+              <div className="">{menuOptions}</div>
             </SheetHeader>
           </SheetContent>
         </Sheet>
