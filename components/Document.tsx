@@ -31,8 +31,8 @@ const Document = ({id}:{id:string}) => {
         }
   return (
     <div>
-        <div>
-            <form action="" onSubmit={updateTitle} className="flex gap-2">
+        <div className="flex max-w-6xl mx-auto justify-between pb-5">
+            <form action="" onSubmit={updateTitle} className="flex  flex-1 gap-2 space-x-2 ">
                 {/* update title */}
                 <Input 
                 placeholder="Title"

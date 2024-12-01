@@ -8,7 +8,6 @@ const DocumentPage = ({params:{id}}:{
     id: string
   }
 }) => {
-    console.log(id);
     
   return (
     <div className='flex flex-col flex-1 min-h-screen'>
